@@ -1,8 +1,8 @@
-import PatientForm from "./components/PatientForm"
-import PatientsList from "./components/PatientsList"
-
+import { ToastContainer } from "react-toastify";
+import PatientForm from "./components/PatientForm";
+import PatientsList from "./components/PatientsList";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
-
   return (
     <>
       <div className="container mx-auto mt-20">
@@ -15,8 +15,9 @@ function App() {
           <PatientsList />
         </div>
       </div>
+      <ToastContainer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
